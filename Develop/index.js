@@ -15,8 +15,49 @@ const questions = [
     "What is your email address?",
 ];
 
+//content of readme file referencing data from the inquirer function in init
+const readMeTemplate = (data) => 
+"#${data.title}
+
+## Tabel of Countents
+- [Description](#Description)
+- [Installation](#Installation)
+- [Usage](#Usage)
+- [Contributing](#Contributing) 
+- [Tests](#Tests)
+- [License](#License)
+- [Questions](#Questions)
+
+
+## Description
+${data.description}
+
+## Installation
+${data.installation}
+
+## Usage    
+${data.usage}
+
+## Contributing 
+${data.contributing}
+
+## Tests 
+${data.tests}
+
+## License
+${data.license}
+
+##Questions
+${data.github}
+Contact Me at ${data.email} with additional questions";
+
+
+
+
 // TODO: Create a function to write README file
-function writeToFile(README, data) {}
+function writeToFile(readMeContent, data) {
+
+}
 
 // TODO: Create a function to initialize app
 function init() {
@@ -50,12 +91,12 @@ function init() {
             },
             {
                 type: "input",
-                name: "contribution",
+                name: "contributing",
                 message: questions[5]
             },
             {
                 type: "input",
-                name: "test",
+                name: "tests",
                 message: questions[6]
             },
             {
@@ -69,7 +110,12 @@ function init() {
                 message: questions[8]
             }
         ])
-        .then(writeToFile(README, data))
+        .then(function (responses) {
+            console.log(data);
+            const readMeContent = readMeTemplate(responses)
+            writeToFile(readMeContent, data);
+
+        })
 
 }
 
