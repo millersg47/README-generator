@@ -69,6 +69,8 @@ function init() {
                 message: questions[8]
             }
         ])
+        .then(writeToFile(README, data))
+
 }
 
 
