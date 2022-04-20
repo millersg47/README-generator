@@ -41,7 +41,7 @@ const questionsArr = [
         type: "list",
         name: "license",
         message: questions[4],
-        choices: ["MIT", "GNU_GPLv3", "Mozilla_Public_License_2.0", "Apache_License_2.0", "none"],
+        choices: ["MIT", "GNU GPLv3", "Mozilla Public License 2.0", "Apache License 2.0", "none"],
     },
     {
         type: "input",
