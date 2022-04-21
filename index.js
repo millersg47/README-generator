@@ -14,6 +14,8 @@ const questions = [
     "What test instructions are there for the project?",
     "What is your GitHub username?",
     "What is your email address?",
+    "Provide a file link to a screenshot of the application",
+    "Provide an alternate description of the screenshot",
 ];
 
 const questionsArr = [
@@ -62,6 +64,17 @@ const questionsArr = [
         type: "input",
         name: "email",
         message: questions[8]
+    }, 
+    {
+        type: "input",
+        name: "image",
+        message: questions[9]
+    }, 
+    { 
+        type: "input",
+        name: "imageAlt",
+        message: questions[10]
+
     }
 ];
 // TODO: Create a function to write README file

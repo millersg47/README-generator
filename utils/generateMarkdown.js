@@ -35,6 +35,10 @@ function renderLicenseSection(license) {
   }
 }
 
+function renderImage(image, imageAlt) {
+  return `![${imageAlt}](./assets/${image})`
+}
+
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `
@@ -55,6 +59,8 @@ function generateMarkdown(data) {
   
   ## Description
   ${data.description}
+
+  ${renderImage(data.image, data.imageAlt)}
   
   ## Installation
   ${data.installation}
