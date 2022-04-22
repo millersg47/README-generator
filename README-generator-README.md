@@ -36,5 +36,5 @@
     MIT
   
   ## Questions
-  [GitHub profile](github.com/millersg47)
+  - [GitHub profile](github.com/millersg47)
   - Contact Me at millersg47@gmail.com with additional questions
