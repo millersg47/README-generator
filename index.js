@@ -14,7 +14,7 @@ const questions = [
     "What test instructions are there for the project?",
     "What is your GitHub username?",
     "What is your email address?",
-    "Provide a file link to a screenshot of the application",
+    "Provide the file name of a screenshot of the application",
     "Provide an alternate description of the screenshot",
 ];
 

@@ -2,6 +2,7 @@
   
   # README-generator
 
+
   [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
   ## Tabel of Countents
@@ -35,5 +36,5 @@
     MIT
   
   ## Questions
-  - [GitHub profile](github.com/millersg47)
+  [GitHub profile](github.com/millersg47)
   - Contact Me at millersg47@gmail.com with additional questions
