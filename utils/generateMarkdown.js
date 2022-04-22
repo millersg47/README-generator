@@ -20,7 +20,7 @@ function renderLicenseLink(license) {
   if (license === "none") {
     return ""
   } else {
-    return "- [License](#License)"
+    return "- [License](#license)"
   }
 }
 
@@ -36,7 +36,11 @@ function renderLicenseSection(license) {
 }
 
 function renderImage(image, imageAlt) {
-  return `![${imageAlt}](./assets/${image})`
+  if (image === " ") {
+    return ""
+  } else {
+    return `![${imageAlt}](./assets/${image})`
+  } 
 }
 
 // TODO: Create a function to generate markdown for README
@@ -48,13 +52,13 @@ function generateMarkdown(data) {
   ${renderLicenseBadge(data.license)}
 
   ## Tabel of Countents
-  - [Description](#Description)
-  - [Installation](#Installation)
-  - [Usage](#Usage)
-  - [Contributing](#Contributing) 
-  - [Tests](#Tests)
+  - [Description](#description)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Contributing](#contributing) 
+  - [Tests](#tests)
   ${renderLicenseLink(data.license)}
-  - [Questions](#Questions)
+  - [Questions](#questions)
   
   
   ## Description
