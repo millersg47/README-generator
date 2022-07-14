@@ -2,15 +2,15 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license === "none") {
-    return ""
+    return "";
   } else if (license === "MIT") {
-    return "[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
+    return "[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
   } else if (license === "GNU GPLv3") {
-    return "[![License](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://opensource.org/licenses/gpl-3.0)"
+    return "[![License](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://opensource.org/licenses/gpl-3.0)";
   } else if (license === "Mozilla Public License 2.0") {
-    return "[![License](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)"
+    return "[![License](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)";
   } else {
-    return "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
+    return "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
   }
 }
 
@@ -18,9 +18,9 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if (license === "none") {
-    return ""
+    return "";
   } else {
-    return "- [License](#license)"
+    return "- [License](#license)";
   }
 }
 
@@ -28,19 +28,19 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (license === "none") {
-    return ""
+    return "";
   } else {
     return `## License
-    ${license}`
+    ${license}`;
   }
 }
 
 function renderImage(image, imageAlt) {
   if (image === " ") {
-    return ""
+    return "";
   } else {
-    return `![${imageAlt}](./assets/${image})`
-  } 
+    return `![${imageAlt}](./assets/${image})`;
+  }
 }
 
 // TODO: Create a function to generate markdown for README
@@ -51,7 +51,7 @@ function generateMarkdown(data) {
 
   ${renderLicenseBadge(data.license)}
 
-  ## Tabel of Countents
+  ## Table of Contents
   - [Description](#description)
   - [Installation](#installation)
   - [Usage](#usage)
